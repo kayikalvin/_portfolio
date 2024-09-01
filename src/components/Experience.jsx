@@ -34,18 +34,18 @@ const Experience = () => {
             label: 'React',
             shadow: '0px 4px 8px rgba(0, 204, 255, 0.6)' 
         },
-        {
-            id: 5,
-            img: nextjs,
-            label: 'Next.js',
-            shadow: '0px 4px 8px rgba(0, 255, 100, 0.6)' 
-        },
-        {
-            id: 6,
-            img: github,
-            label: 'GitHub',
-            shadow: '0px 4px 8px rgba(0, 0, 0, 0.6)' 
-        },
+        // {
+        //     id: 5,
+        //     img: nextjs,
+        //     label: 'Next.js',
+        //     shadow: '0px 4px 8px rgba(0, 255, 100, 0.6)' 
+        // },
+        // {
+        //     id: 6,
+        //     img: github,
+        //     label: 'GitHub',
+        //     shadow: '0px 4px 8px rgba(0, 0, 0, 0.6)' 
+        // },
         {
             id: 7,
             img: tailwind,

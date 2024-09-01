@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import {Link} from 'react-scroll'
-
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [activeLink, setActiveLink] = useState('home'); // State to track the active link
+  const [activeLink, setActiveLink] = useState('home');
 
   const links = [
     { id: 1, link: 'home' },
@@ -15,7 +14,6 @@ const NavBar = () => {
     { id: 5, link: 'contact' },
   ];
 
-  // Function to handle link click and set active link
   const handleLinkClick = (link) => {
     setActiveLink(link);
     if (nav) setNav(false); // Close mobile menu on link click
@@ -59,16 +57,15 @@ const NavBar = () => {
               className={`px-4 cursor-pointer capitalize py-6 text-4xl ${
                 activeLink === link ? 'text-cyan-500' : 'text-gray-400'
               }`}
-              onClick={() => {
-                handleLinkClick(link);
-                // Trigger the scrolling action manually
-                document.querySelector(`.${link}`).scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start'
-                });
-              }}
+              onClick={() => handleLinkClick(link)}
             >
-              <Link to={link} smooth duration={400} offset={-70}>
+              <Link
+                to={link}
+                smooth
+                duration={400}
+                offset={-70}
+                onClick={() => setNav(false)} // Close menu on click
+              >
                 {link}
               </Link>
             </li>
