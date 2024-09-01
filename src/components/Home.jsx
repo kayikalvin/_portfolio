@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroImg from "../assets/heroImage.jpg";
 import { GoArrowUpRight } from "react-icons/go";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 
 
