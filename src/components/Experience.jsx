@@ -7,6 +7,7 @@ import reactImg from '../assets/react.png'
 import nextjs from '../assets/nextjs.png'
 import github from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
+import python from '../assets/python.jpeg'
 
 const Experience = () => {
     const images = [
@@ -18,9 +19,10 @@ const Experience = () => {
         },
         {
             id: 2,
-            img: css,
-            label: 'CSS',
-            shadow: '0px 4px 8px rgba(0, 191, 255, 0.6)' 
+            img: python,
+            label: 'python',
+            shadow: '0px 4px 8px rgba(255, 255, 255, 0.6)'
+ 
         },
         {
             id: 3,
