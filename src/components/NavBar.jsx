@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const links = [
     { id: 1, link: 'home' },
@@ -14,15 +15,36 @@ const NavBar = () => {
     { id: 5, link: 'contact' },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    if (nav) setNav(false); // Close mobile menu on link click
+    setNav(false); // Close mobile menu on link click
   };
 
   return (
-    <div className='flex justify-between items-center w-full h-30 px-4 py-4 text-white fixed bg-black'>
+    <div
+      className={`flex justify-between items-center w-full h-30 px-4 py-4 text-white fixed transition-all duration-500 ${
+        isScrolled ? 'bg-transparent' : 'bg-black'
+      }`}
+    >
       <h1 className='text-6xl font-signature ml-2'>Kalvoh</h1>
-      
+
       {/* Desktop Menu */}
       <ul className='hidden md:flex'>
         {links.map(({ id, link }) => (
@@ -31,9 +53,15 @@ const NavBar = () => {
             className={`text-xl px-4 cursor-pointer capitalize font-semibold ${
               activeLink === link ? 'text-cyan-500' : 'text-gray-400'
             } hover:scale-105 duration-200`}
-            onClick={() => handleLinkClick(link)}
           >
-            <Link to={link} smooth duration={400} offset={-70}>
+            <Link
+              to={link}
+              smooth
+              duration={400}
+              offset={-70}
+              className="cursor-pointer"
+              onClick={() => handleLinkClick(link)}
+            >
               {link}
             </Link>
           </li>
@@ -57,14 +85,13 @@ const NavBar = () => {
               className={`px-4 cursor-pointer capitalize py-6 text-4xl ${
                 activeLink === link ? 'text-cyan-500' : 'text-gray-400'
               }`}
-              onClick={() => handleLinkClick(link)}
             >
               <Link
                 to={link}
                 smooth
                 duration={400}
                 offset={-70}
-                onClick={() => setNav(false)} // Close menu on click
+                onClick={() => handleLinkClick(link)}
               >
                 {link}
               </Link>
