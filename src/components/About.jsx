@@ -8,7 +8,11 @@ const About = () => {
                 <p className='text-4xl text-gray-300 font-bold inline border-b-4 border-gray-500'> About</p>
 
             </div>
-            <p className='text-xl mt-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi amet pariatur enim nam deleniti! Illum quam expedita alias repudiandae hic magni minima, laboriosam est tempore, maiores iusto dolor non qui tempora odit quasi eius? Rerum iste perferendis provident minima similique nulla qui, voluptatibus est delectus soluta ad aperiam! Dolorem.</p>
+            <p className='text-xl mt-20'>Hello! I'm Alvin Kayi Mwashi, a passionate data analyst with a background in Informatics from Rongo University. With a blend of technical expertise and analytical insight, I specialize in turning raw data into actionable insights that drive business decisions. My experience spans across data analysis, cybersecurity, and web development, giving me a versatile skill set to tackle complex problems in various domains.
+
+                I enjoy working with diverse datasets and uncovering patterns that lead to impactful solutions. Whether it's building predictive models, creating visualizations, or optimizing processes, I am committed to delivering data-driven results that empower organizations to make informed decisions.
+
+                Let’s connect and explore how I can help you harness the power of data to achieve your goals.</p>
             <br />
             <p className='text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat vel fugiat voluptatem velit. Suscipit sapiente sequi animi repellat velit deleniti cumque ducimus voluptatum magni quisquam debitis soluta nesciunt aliquid architecto delectus nihil asperiores quam tempora natus impedit, dolore aspernatur. A at unde dolorem quaerat quidem, architecto facilis pariatur labore iste?</p>
         </div>
