@@ -14,7 +14,7 @@ const About = () => {
 
                 Let’s connect and explore how I can help you harness the power of data to achieve your goals.</p>
             <br />
-            <p className='text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat vel fugiat voluptatem velit. Suscipit sapiente sequi animi repellat velit deleniti cumque ducimus voluptatum magni quisquam debitis soluta nesciunt aliquid architecto delectus nihil asperiores quam tempora natus impedit, dolore aspernatur. A at unde dolorem quaerat quidem, architecto facilis pariatur labore iste?</p>
+            
         </div>
     </div>
   )
