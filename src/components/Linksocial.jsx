@@ -49,7 +49,7 @@ const Linksocial = () => {
     
     </>
   ),
-  href: './Alvinn kayi mwashi word resumee.pdf',
+  href: './Alvin Kayi Mwashi.pdf',
   style:'rounded-br-md',
   download:true,
   
