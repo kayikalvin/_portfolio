@@ -14,16 +14,16 @@ const Portfolio = () => {
         {
             id: 1,
             src: arrayDestruct,
-            demoUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
-            codeUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
-            name:'World Homicide Analysis'
+            demoUrl: 'https://lookerstudio.google.com/reporting/94b14e89-6c6d-49f1-a625-d5f4a7138a72',
+            codeUrl: 'https://github.com/kayikalvin/Walmart-DataAnalysis',
+            name:'Walmart Sales Analysis'
         },
         {
             id: 2,
             src: reactParallax,
-            demoUrl: 'https://github.com/kayikalvin/Walmart-DataAnalysis',
-            codeUrl: 'https://github.com/kayikalvin/Walmart-DataAnalysis',
-            name:'Walmart Sales Analysis'
+            demoUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
+            codeUrl: 'https://github.com/kayikalvin/World-homicide-analysis',
+            name:'World Homicide Analysis'
         },
         {
             id: 3,
