@@ -13,7 +13,7 @@ const Home = () => {
             <div className='flex flex-col justify-center w-full h-full'>
                 <h2 className='text-5xl sm:text-6xl font-bold text-white'> Hi<br/> I'm Kalvin Kayi <br/>a Data Analyst</h2>
                 <p className='text-gray-500 py-4 max-w-md'>
-                    I have experience in building designing Dashboards.
+                    I have experience in building and designing Dashboards.
                     Curently, I am working on genarating useful insights from data using python,SQL and Looker Studio fro visualization,web application using technologies like
                     React and Tailwind.
                   
