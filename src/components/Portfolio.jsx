@@ -1,10 +1,10 @@
 import React from 'react';
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import arrayDestruct from "../assets/portfolio/walmartlogo.webp";
+import installNode from "../assets/portfolio/UM.webp";
+import navbar from "../assets/portfolio/udemy.webp";
+import reactParallax from "../assets/portfolio/pexels-pixabay-41949.jpg";
+import reactSmooth from "../assets/portfolio/world weather.jpg";
+import reactWeather from "../assets/portfolio/diabetes.jpeg";
 import { FaGithub } from "react-icons/fa";
 
 
